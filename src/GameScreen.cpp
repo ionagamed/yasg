@@ -17,7 +17,7 @@ void GameScreen::loop(const sf::Time& dt) {
 	tst->velocity = sf::Vector2f(30.0f, 30.0f);
 	sf::Vector2f towardsPlayer = sf::normalize(p->getPosition() - tst->getPosition());
 	towardsPlayer = sf::rotate(towardsPlayer, (float) (rand() % 265) / 420.0);
-	tst->spawnBullet(towardsPlayer * (float) Bullet::speed / 3.0f);
+	tst->spawnBullet(towardsPlayer * (float) Bullet::speed);
 
 	if (tst->deadFrom(p)) {
 		tst->setPosition(0xDEADC0DE, 0xDEADBEEF);
