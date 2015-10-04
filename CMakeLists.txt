@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 2.6)
 project(yasg)
 
-set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${CMAKE_SOURCE_DIR}/cmake/Modules)
+set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${CMAKE_SOURCE_DIR}/cmake)
 set(EXECUTABLE_OUTPUT_PATH build)
 
 if (CMAKE_BUILD_TYPE STREQUAL "Debug")
