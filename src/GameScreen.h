@@ -10,7 +10,7 @@ public:
 	GameScreen();
 
 	HumanPlayer* p;
-	Player* tst;
+	std::vector <Player*> tst;
 
 	virtual void loop(const sf::Time& dt);
 	virtual void handle(const sf::Event& ev);
