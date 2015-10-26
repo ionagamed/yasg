@@ -16,6 +16,7 @@ public:
 
 	void loop(const sf::Time& dt);
 	virtual void spawnBullet(const sf::Vector2f& velo);
+	virtual void resetBulletCooldown();
 
 	/// WARNING: Linear algorithm
 	/// Just goes through the bullets of p

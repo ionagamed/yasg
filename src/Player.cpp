@@ -43,6 +43,10 @@ void Player::spawnBullet(const sf::Vector2f& velo) {
 	}
 }
 
+void Player::resetBulletCooldown() {
+	lastShot = cooldown + 1;
+}
+
 bool Player::deadFrom(const Player* p) {
 	for (Bullet b : p->bullets) {
 		if (sf::magnitude(getPosition() - b.getPosition()) < 20.0) {

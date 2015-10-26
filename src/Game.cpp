@@ -34,7 +34,7 @@ int Game::run() {
 
 		window->clear(sf::Color::White);
 		screen->loop(clock.restart());
-		window->draw(*screen);
+		window->draw(*screen, &shader);
 		window->display();
 	
 		if (!jobs.empty()) {

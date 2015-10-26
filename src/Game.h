@@ -11,6 +11,8 @@ public:
 	sf::RenderWindow* window;
 	Screen* screen;
 
+	sf::Shader shader;
+
 	void init();
 	int run();
 	void exit();
