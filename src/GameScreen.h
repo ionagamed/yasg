@@ -12,6 +12,10 @@ public:
 	HumanPlayer* p;
 	std::vector <Player*> tst;
 
+	sf::Shader shader;
+	double xLim, yLim;
+	double xDecay, yDecay;
+
 	virtual void loop(const sf::Time& dt);
 	virtual void handle(const sf::Event& ev);
 
